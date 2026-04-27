@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helm — The operating system for restaurant owners</title>
+  <meta name="description" content="Helm gives restaurant owners one place to manage their managers, track inventory and waste, run schedules, forecast cashflow, and collect every bill." />
+  <link rel="canonical" href="https://helm.mgmhospitality.co/" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Helm — The operating system for restaurant owners" />
+  <meta property="og:description" content="One place to run your managers, inventory, schedules, cashflow, and bills." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://helm.mgmhospitality.co/" />
+  <meta property="og:site_name" content="Helm" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ========= NAV ========= -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Helm home">
+      <img src="logo.svg" alt="Helm" height="34" />
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#product">Product</a>
+      <a href="#cashflow">Cashflow</a>
+      <a href="#bills">Bills</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#waitlist">Join waitlist</a>
+  </header>
+
+  <!-- ========= HERO ========= -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="eyebrow">The owner's OS for independent restaurants</div>
+      <h1 class="display">
+        Run your restaurant like you actually <span class="grad">own</span> it.
+      </h1>
+      <p class="lead">
+        Helm is one clean dashboard where you oversee every manager, every
+        line of inventory, every shift, every bill, and every dollar — with
+        real-time cashflow from your bank and a forecast that knows what
+        next Saturday will look like.
+      </p>
+      <div class="cta-row">
+        <a href="#waitlist" class="btn btn-primary btn-lg">Join the waitlist</a>
+        <a href="#product" class="btn btn-ghost btn-lg">See what's inside →</a>
+      </div>
+
+      <!-- Mock dashboard -->
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar">
+          <div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div>
+          <div class="mock-url">helm.app / 1212 Post St</div>
+        </div>
+        <div class="mock-body">
+          <div class="mock-sidebar">
+            <div class="ms-section">Today</div>
+            <div class="ms-item ms-active">Overview</div>
+            <div class="ms-item">Managers</div>
+            <div class="ms-item">Inventory</div>
+            <div class="ms-item">Schedules</div>
+            <div class="ms-item">Cashflow</div>
+            <div class="ms-item">Bills</div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-row">
+              <div class="mock-stat">
+                <div class="ms-label">Today's net cash</div>
+                <div class="ms-value">+$4,812</div>
+                <div class="ms-trend good">▲ 8% vs. last Sat</div>
+              </div>
+              <div class="mock-stat">
+                <div class="ms-label">Food cost (7d)</div>
+                <div class="ms-value">31.4%</div>
+                <div class="ms-trend bad">▲ 1.2% over par</div>
+              </div>
+              <div class="mock-stat">
+                <div class="ms-label">On-shift</div>
+                <div class="ms-value">14 / 16</div>
+                <div class="ms-trend">2 no-shows flagged</div>
+              </div>
+            </div>
+            <div class="mock-chart"></div>
+            <div class="mock-list">
+              <div class="ml-row">
+                <div class="ml-chip amber">PAR LOW</div>
+                <div class="ml-title">Chicken thighs — 12 lb on hand, par 30</div>
+                <div class="ml-meta">Sysco · order by 8pm</div>
+              </div>
+              <div class="ml-row">
+                <div class="ml-chip indigo">BILL</div>
+                <div class="ml-title">Con Edison — $1,284 due in 4 days</div>
+                <div class="ml-meta">bills@yours.helm.app</div>
+              </div>
+              <div class="ml-row">
+                <div class="ml-chip rose">MANAGER</div>
+                <div class="ml-title">Bar: waste up 18% this week</div>
+                <div class="ml-meta">Ask Danny</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= LOGOS / PROBLEM ========= -->
+  <section class="section band">
+    <div class="container">
+      <p class="band-title">
+        Owners are running operations across
+        <strong>5+ apps</strong>, <strong>3 spreadsheets</strong>, and
+        <strong>a pile of vendor PDFs</strong>. Helm replaces the pile.
+      </p>
+      <div class="replaces">
+        <span>Replaces:</span>
+        <span class="rep-chip">7shifts</span>
+        <span class="rep-chip">MarginEdge</span>
+        <span class="rep-chip">Bill.com</span>
+        <span class="rep-chip">QuickBooks reports</span>
+        <span class="rep-chip">The shared Google Sheet</span>
+        <span class="rep-chip">That one group text with Danny</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= PRODUCT ========= -->
+  <section class="section" id="product">
+    <div class="container">
+      <h2 class="section-title">What Helm does for owners</h2>
+      <p class="section-sub">
+        Every feature is built around a simple question: what should the
+        owner know <em>right now</em>, and what should they be able to do
+        about it in one click?
+      </p>
+
+      <!-- Feature row 1: Managers -->
+      <div class="feature-split">
+        <div class="feature-copy">
+          <div class="feat-tag">Managers</div>
+          <h3>Oversee every manager from one screen</h3>
+          <p>
+            Assign ownership of kitchen, bar, and front-of-house.
+            Every metric that matters to their role rolls up to you in
+            real time — food cost, bar pour cost, labor ratio, guest
+            satisfaction, no-shows. When something's off, you see it
+            before they do.
+          </p>
+          <ul class="bullets">
+            <li>Per-manager scorecards with target vs. actual</li>
+            <li>Automatic alerts on drift: waste, overtime, voids, comps</li>
+            <li>1:1 notes, reviews, and goals tracked alongside metrics</li>
+          </ul>
+        </div>
+        <div class="feature-visual visual-managers">
+          <div class="v-card">
+            <div class="v-head">
+              <span class="v-avatar indigo">DK</span>
+              <div>
+                <div class="v-name">Danny K. — Kitchen</div>
+                <div class="v-sub">week of Apr 13</div>
+              </div>
+            </div>
+            <div class="v-metrics">
+              <div class="vm"><span>Food cost</span><strong class="bad">32.1%</strong></div>
+              <div class="vm"><span>Waste</span><strong class="bad">+18%</strong></div>
+              <div class="vm"><span>Voids</span><strong class="good">2</strong></div>
+              <div class="vm"><span>Labor</span><strong class="good">24.7%</strong></div>
+            </div>
+          </div>
+          <div class="v-card v-card-2">
+            <div class="v-head">
+              <span class="v-avatar amber">MP</span>
+              <div>
+                <div class="v-name">Maria P. — Bar</div>
+                <div class="v-sub">week of Apr 13</div>
+              </div>
+            </div>
+            <div class="v-metrics">
+              <div class="vm"><span>Pour cost</span><strong class="good">19.4%</strong></div>
+              <div class="vm"><span>Comps</span><strong>$214</strong></div>
+              <div class="vm"><span>No-shows</span><strong>1</strong></div>
+              <div class="vm"><span>Tips</span><strong class="good">$3,412</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature row 2: Inventory (reverse) -->
+      <div class="feature-split reverse">
+        <div class="feature-copy">
+          <div class="feat-tag">Inventory</div>
+          <h3>Par values, counts, and waste — without the clipboards</h3>
+          <p>
+            Set par values by item, location, and day of week. Managers
+            count on their phone, Helm reconciles against your POS sales,
+            and waste gets logged with a photo in five seconds. You see
+            shrinkage trends across your whole operation in a single chart.
+          </p>
+          <ul class="bullets">
+            <li>Theoretical vs. actual usage, updated nightly</li>
+            <li>Smart reorder suggestions by vendor, cutoff-aware</li>
+            <li>Waste by station, by shift, by manager on duty</li>
+          </ul>
+        </div>
+        <div class="feature-visual visual-inventory">
+          <div class="inv-table">
+            <div class="inv-row inv-head">
+              <span>Item</span><span>On hand</span><span>Par</span><span>Status</span>
+            </div>
+            <div class="inv-row">
+              <span>Chicken thighs</span><span>12 lb</span><span>30</span>
+              <span class="pill bad">Order</span>
+            </div>
+            <div class="inv-row">
+              <span>Whole milk</span><span>8 gal</span><span>12</span>
+              <span class="pill warn">Low</span>
+            </div>
+            <div class="inv-row">
+              <span>Butter, unsalted</span><span>22 lb</span><span>20</span>
+              <span class="pill good">OK</span>
+            </div>
+            <div class="inv-row">
+              <span>Olive oil, EVOO</span><span>3 ca</span><span>4</span>
+              <span class="pill warn">Low</span>
+            </div>
+            <div class="inv-row">
+              <span>Kosher salt</span><span>18 lb</span><span>10</span>
+              <span class="pill good">OK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature row 3: Scheduling -->
+      <div class="feature-split" id="schedules">
+        <div class="feature-copy">
+          <div class="feat-tag">Scheduling</div>
+          <h3>Schedules that start with your actual forecast</h3>
+          <p>
+            Helm builds each week's draft from your forecasted covers and
+            labor target, not last week's copy-paste. Your managers edit
+            inside their own view; you approve from yours. Staff see
+            shifts and swap in the app.
+          </p>
+          <ul class="bullets">
+            <li>Labor-ratio guardrails per shift</li>
+            <li>Certifications, break law, and minor rules enforced</li>
+            <li>No-show and late-arrival history surfaced on the schedule</li>
+          </ul>
+        </div>
+        <div class="feature-visual visual-schedule">
+          <div class="sched">
+            <div class="sched-day"><div class="sd-label">Mon</div><div class="sd-bar sd-60"></div></div>
+            <div class="sched-day"><div class="sd-label">Tue</div><div class="sd-bar sd-55"></div></div>
+            <div class="sched-day"><div class="sd-label">Wed</div><div class="sd-bar sd-65"></div></div>
+            <div class="sched-day"><div class="sd-label">Thu</div><div class="sd-bar sd-75"></div></div>
+            <div class="sched-day"><div class="sd-label">Fri</div><div class="sd-bar sd-92"></div></div>
+            <div class="sched-day"><div class="sd-label">Sat</div><div class="sd-bar sd-100 sd-peak"></div></div>
+            <div class="sched-day"><div class="sd-label">Sun</div><div class="sd-bar sd-70"></div></div>
+          </div>
+          <p class="viz-caption">Forecasted covers · Week of Apr 13</p>
+        </div>
+      </div>
+
+      <!-- Feature row 4: Cashflow -->
+      <div class="feature-split reverse" id="cashflow">
+        <div class="feature-copy">
+          <div class="feat-tag">Cashflow</div>
+          <h3>A cashflow sheet that forecasts itself</h3>
+          <p>
+            Connect your bank in two clicks. Helm projects your next
+            30, 60, and 90 days from your real deposit patterns, your
+            upcoming bills, your payroll runs, and your seasonal history.
+            Owners who've never modeled cashflow in their lives suddenly
+            can.
+          </p>
+          <ul class="bullets">
+            <li>Plaid bank sync — balances and transactions update hourly</li>
+            <li>Projected low-water mark with drill-down to the cause</li>
+            <li>"What if I push the rent 3 days" scenarios, one toggle</li>
+          </ul>
+        </div>
+        <div class="feature-visual visual-cashflow">
+          <div class="cf">
+            <div class="cf-header">
+              <div>
+                <div class="cf-label">Projected balance · Apr 20</div>
+                <div class="cf-value">$38,204</div>
+              </div>
+              <div class="cf-tabs">
+                <span class="cf-tab cf-active">30d</span>
+                <span class="cf-tab">60d</span>
+                <span class="cf-tab">90d</span>
+              </div>
+            </div>
+            <svg viewBox="0 0 300 120" class="cf-chart" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="cfg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stop-color="#6366f1" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,80 C30,70 45,50 70,55 C100,60 115,40 140,35 C170,30 185,65 210,60 C240,55 260,20 300,25 L300,120 L0,120 Z"
+                    fill="url(#cfg)"/>
+              <path d="M0,80 C30,70 45,50 70,55 C100,60 115,40 140,35 C170,30 185,65 210,60 C240,55 260,20 300,25"
+                    fill="none" stroke="#6366f1" stroke-width="2.5"/>
+              <line x1="0" y1="95" x2="300" y2="95" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+            </svg>
+            <div class="cf-legend">
+              <span><span class="dot indigo"></span>Projected</span>
+              <span><span class="dot amber"></span>Low-water target</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature row 5: Bills -->
+      <div class="feature-split" id="bills">
+        <div class="feature-copy">
+          <div class="feat-tag">Bills</div>
+          <h3>Every bill lands in one inbox</h3>
+          <p>
+            Forward vendor bills — or have them sent directly — to
+            <code>bills@yours.helm.app</code>. Helm extracts the line
+            items, matches them to your vendors and GL codes, and drops
+            the total straight onto your cashflow forecast.
+            Approve pay dates with one click.
+          </p>
+          <ul class="bullets">
+            <li>PDF, image, and EDI invoice parsing</li>
+            <li>Duplicate detection across vendors and locations</li>
+            <li>Bank-synced payment status — no more "did this get paid?"</li>
+          </ul>
+        </div>
+        <div class="feature-visual visual-bills">
+          <div class="bills">
+            <div class="bills-head">
+              <span class="bh-ico">✉</span>
+              bills@yours.helm.app
+            </div>
+            <div class="bill-row">
+              <div class="b-vendor">Sysco</div>
+              <div class="b-amt">$3,240.12</div>
+              <div class="b-due">Due May 1</div>
+              <div class="b-pill good">Scheduled</div>
+            </div>
+            <div class="bill-row">
+              <div class="b-vendor">Con Edison</div>
+              <div class="b-amt">$1,284.00</div>
+              <div class="b-due">Due Apr 23</div>
+              <div class="b-pill warn">Review</div>
+            </div>
+            <div class="bill-row">
+              <div class="b-vendor">Southern Glazer's</div>
+              <div class="b-amt">$2,104.50</div>
+              <div class="b-due">Due May 3</div>
+              <div class="b-pill good">Scheduled</div>
+            </div>
+            <div class="bill-row">
+              <div class="b-vendor">Restaurant Depot</div>
+              <div class="b-amt">$612.18</div>
+              <div class="b-due">Paid Apr 14</div>
+              <div class="b-pill neutral">Paid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= INTEGRATIONS ========= -->
+  <section class="section band-2">
+    <div class="container">
+      <h2 class="section-title center">Works with what you already use</h2>
+      <div class="integ-grid">
+        <div class="integ">POS<span>Toast · Square · Clover · Aloha</span></div>
+        <div class="integ">Bank<span>Plaid-connected · all major US banks</span></div>
+        <div class="integ">Accounting<span>QuickBooks Online · Xero</span></div>
+        <div class="integ">Payroll<span>Gusto · ADP · Paychex</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= PRICING ========= -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Straightforward pricing</h2>
+      <p class="section-sub">One price per location. Every feature on every plan.</p>
+
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-name">Single</div>
+          <div class="price-amount"><span class="price-num">$249</span><span class="price-unit">/mo per location</span></div>
+          <div class="price-tag">Up to 3 managers, 1 bank account</div>
+          <ul class="price-list">
+            <li>All metrics, all features</li>
+            <li>Bank sync + cashflow forecast</li>
+            <li>Bills inbox</li>
+            <li>Schedules &amp; shift swaps</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#waitlist">Join waitlist</a>
+        </div>
+
+        <div class="price-card popular">
+          <div class="price-badge">For most owners</div>
+          <div class="price-name">Group</div>
+          <div class="price-amount"><span class="price-num">$199</span><span class="price-unit">/mo per location</span></div>
+          <div class="price-tag">2-10 locations · unlimited managers</div>
+          <ul class="price-list">
+            <li>Everything in Single</li>
+            <li>Cross-location rollups</li>
+            <li>Multi-entity cashflow</li>
+            <li>Role-based access by location</li>
+            <li>Priority onboarding &amp; Slack support</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#waitlist">Join waitlist</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-name">Portfolio</div>
+          <div class="price-amount"><span class="price-num">Custom</span></div>
+          <div class="price-tag">11+ locations, franchises, investor groups</div>
+          <ul class="price-list">
+            <li>Everything in Group</li>
+            <li>Custom rollups &amp; entities</li>
+            <li>SSO, audit logs, SOC 2 report</li>
+            <li>Dedicated success manager</li>
+            <li>Custom SLAs</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#waitlist">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= WAITLIST ========= -->
+  <section class="section waitlist-section" id="waitlist">
+    <div class="container narrow">
+      <h2 class="section-title">Join the waitlist</h2>
+      <p class="section-sub">
+        We're working with a handful of design partners for our first
+        cohort. Tell us about your operation and we'll reach out.
+      </p>
+
+      <form id="waitlist-form" class="form" novalidate>
+        <div class="form-row">
+          <label class="field">
+            <span>First name *</span>
+            <input name="first_name" type="text" required autocomplete="given-name" />
+          </label>
+          <label class="field">
+            <span>Last name *</span>
+            <input name="last_name" type="text" required autocomplete="family-name" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="field">
+            <span>Email *</span>
+            <input name="email" type="email" required autocomplete="email" />
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input name="phone" type="tel" autocomplete="tel" />
+          </label>
+        </div>
+        <label class="field">
+          <span>Restaurant group or concept name *</span>
+          <input name="company" type="text" required />
+        </label>
+        <div class="form-row">
+          <label class="field">
+            <span>Locations</span>
+            <input name="locations" type="number" min="1" step="1" placeholder="1" />
+          </label>
+          <label class="field">
+            <span>Your role</span>
+            <select name="role">
+              <option value="">Select…</option>
+              <option>Owner / Operator</option>
+              <option>CFO / Finance lead</option>
+              <option>Director of operations</option>
+              <option>GM</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">
+          <span>What's the #1 thing you wish you had better visibility on?</span>
+          <textarea name="pain" rows="3" placeholder="e.g. 'I never know my real cash position until my bookkeeper sends me QuickBooks on the 10th'"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+          <span class="btn-label">Request early access</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="fine center">We'll only use this to reach out about Helm.</p>
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo-dark.svg" alt="Helm" height="28" />
+        <p class="fine-dim">© <span id="yr"></span> Helm · An MGM Hospitality company.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#waitlist">Waitlist</a>
+        <a href="mailto:helm@mgmhospitality.co">helm@mgmhospitality.co</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase JS client (UMD from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.48.1/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
